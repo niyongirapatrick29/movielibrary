@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% load static %} 
+
+<div class="container">
+  <form method="POST" class="post-form" action="/emp">  
+    {% csrf_token %}  
+<div class="container">  
+<br>  
+<div class="form-group row">  
+<label class="col-sm-1 col-form-label"></label>  
+<div class="col-sm-4">  
+<h3>Enter Details</h3>  
+</div>  
+</div>    
+<div class="form-group row">  
+  <div class="col-sm-">  
+      <input type="hidden" name="eid" id="eid" required maxlength="20" />  
+  </div>  
+</div>  
+<div class="form-group row">
+  <label class="col-sm-2 col-form-label">Employee Name:</label>  
+  <div class="col-sm-4">  
+      <input type="text"class="form-control"  name="ename" id="id_ename" required maxlength="100"  />  
+  </div>  
+</div>  
+  <div class="form-group row">  
+  <label class="col-sm-2 col-form-label">Employee Email:</label>  
+  <div class="col-sm-4">  
+      <input type="email" class="form-control" name="eemail" id="id_eemail" required maxlength="254"  />  
+  </div>  
+</div>  
+<div class="form-group row">  
+  <label class="col-sm-2 col-form-label">Employee DOB:</label>  
+  <div class="col-sm-4">  
+      <input type="date" class="form-control" name="dob" id="id_dob" required   />  
+  </div>
+</div>  
+  <div class="form-group row">  
+  <label class="col-sm-2 col-form-label">Employee Contact:</label>  
+  <div class="col-sm-4">  
+      <input type="text" class="form-control" name="econtact" id="id_econtact" required maxlength="10" placeholder="07XXXXXXXX" />  
+  </div>
+</div>  
+<div class="form-group row">  
+  <label class="col-sm-2 col-form-label">Employee status:</label>  
+  <div class="col-sm-4">  
+      <input type="checkbox" class="form-control" name="status" id="id_status" value="True" />  
+  </div>
+</div>  
+<div class="form-group row">  
+<label class="col-sm-1 col-form-label"></label>  
+<div class="col-sm-4">  
+<button type="submit" class="btn btn-primary">Save <span class="fas fa-plus"></span></button>  
+<button type="reset" class="btn btn-warning">Clear <span class="fas fa-trash"></span></button> 
+</div>  
+</div>  
+</div>  
+</form>    
+</div>
+
+{% endblock %}

@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% load static %} 
+
+
+<div class="row container">
+    <div class="col-md-12 col-sm-12">
+        
+        <form method="POST" class="form" action="/addMovie">  
+            {% csrf_token %}
+        <div class="container">
+        <div class="form-group row">
+        <label class="col-sm-12 col-form-label">Movie Title:</label>  
+        <div class="col-sm-12">  
+            <input type="text" class="form-control" name="movieTitle" id="id_roleTitle" required  />  
+        </div>  
+        </div>  
+        <div class="form-group">
+            <label for="email">Movie Actor:</label>
+            <select name="cars" class="custom-select mb-3">
+                <option selected disabled>Custom Select Actor</option>
+                <option value="Actor 1">Volvo</option>
+                <option value="Actor 2">Fiat</option>
+                <option value="audi">Audi</option>
+              </select>
+          </div>
+          <div class="form-group">
+            <label for="email">Movie Genre:</label>
+            <select name="cars" class="custom-select mb-3">
+                <option selected disabled>Custom Select Genre</option>
+                <option value="Actor 1">Crime</option>
+                <option value="Actor 2">Action</option>
+                <option value="audi">War</option>
+              </select>
+          </div>
+          <div class="form-group">
+            <label for="pwd">Movie Year Of Pub:</label>
+            <input type="date" class="form-control" id="pwd" placeholder="Date of publication" name="movieYear">
+          </div>
+
+        <div class="form-group row">  
+        <label class="col-sm-1 col-form-label"></label>  
+        <div class="col-sm-12">  
+        <button type="submit" class="btn btn-success btn-sm"><i>Add Movie <span class="fas fa-plus"></span></i></button>  
+        </div>  
+        </div>  
+        </div>  
+        </form> 
+    </div>
+
+    <!--- Display all department in a table -->
+
+</div>
+
+{% endblock %}
