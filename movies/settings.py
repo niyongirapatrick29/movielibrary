@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-e9x4dx&6km#*v4afcliv&u29)nh56hbadch5c+^#uzr_9(davp'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 #ALLOWED_HOSTS = ['http://group221000.postgres.database.azure.com']
 ALLOWED_HOSTS = ['*']
