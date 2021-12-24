@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-e9x4dx&6km#*v4afcliv&u29)nh56hbadch5c+^#uzr_9(davp
 DEBUG = True
 
 #ALLOWED_HOSTS = ['http://group221000.postgres.database.azure.com']
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['127.0.0.1','movielibrary2022.herokuapp.com']
 
  
 # Application definition
