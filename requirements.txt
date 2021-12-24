@@ -1,4 +1,7 @@
-django
+Django
 whitenoise
 pillow
+gunicorn
+pytz
 django-heroku
+asgiref
