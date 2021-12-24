@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+'''#!/usr/bin/env python
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
@@ -22,26 +22,14 @@ if __name__ == '__main__':
     main()
 
 
-#!/usr/bin/env python
-"""Django's command-line utility for administrative tasks."""
-'''import os
+'''
+
+import os
 import sys
 
-def main():
-    """Run administrative tasks."""
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE','your_project.settings')
-    try:
-        from django.core.management import execute_from_command_line
-    except ImportError as exc:
-        raise ImportError(
-            "Couldn't import Django. Are you sure it's installed and "
-            "available on your PYTHONPATH environment variable? Did you "
-            "forget to activate a virtual environment?"
-        ) from exc
-    try:
-        execute_from_command_line(sys.argv) # just put this in try block
-    except:
-        pass
+if __name__ == "__main__":
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "gettingstarted.settings")
 
-if __name__ == '__main__':
-    main()'''
+    from django.core.management import execute_from_command_line
+
+    execute_from_command_line(sys.argv)
