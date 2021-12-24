@@ -94,10 +94,10 @@ DATABASES = {
 
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'postgres',
-        'USER': 'cnwcqnntfs',
-        'PASSWORD': 'GGF14VPT3C3J4K10$',
-        'HOST': 'movielibrary2021',
+        'NAME': 'd2edln4n1gf0si',
+        'USER': 'nxsytjeomlepmp',
+        'PASSWORD': '0c54126ff3d49fa0ef796c2c1381b232c209f7c4feaebe724fa6dec1000a5b25$',
+        'HOST': 'ec2-50-19-160-40.compute-1.amazonaws.com',
         'PORT': '5432',
         #'OPTIONS':{'sslmode':'require'},
     }
